@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rollup --c",
     "dev": "rollup --c --watch",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "publish": "npm publish"
   },
   "type": "module",
   "keywords": [
