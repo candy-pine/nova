@@ -4,7 +4,7 @@
   "description": "Candý Pine is a soft, harmonious and candy-inspired dark theme, based off of the beautiful Rosé Pine.",
   "scripts": {
     "dev": "rollup --c --watch",
-    "build": "rollup --c"
+    "build": "rollup --c"r
   },
   "keywords": [
     "minimal",
