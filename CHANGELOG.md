@@ -2,7 +2,7 @@
 
 All notable changes to the "candy-pine" extension will be documented in this file.
 
-## 0.1.2
+## 0.1.3
 
 - update image paths in readme
 
