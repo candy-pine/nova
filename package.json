@@ -1,6 +1,6 @@
 {
   "name": "@candy-pine/nova",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Candý Pine is a soft, harmonious and candy-inspired dark theme, based off of the beautiful Rosé Pine.",
   "scripts": {
     "build": "rollup --c",
