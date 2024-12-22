@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="assets/candy-pine--icon--rounded.webp" width="150" />
+	<img src="./assets/candy-pine--icon--rounded.webp" width="150" />
 	<h2 align="center">Candý Pine for VSCode</h2>
 </p>
 
@@ -19,7 +19,7 @@
 
 A preview of React TSX next to CSS with the default Candý Pine.
 
-![Nova with Candý Pine](/assets/preview.jpg)
+![Nova with Candý Pine](./assets/preview.jpg)
 
 ## Thanks to
 
