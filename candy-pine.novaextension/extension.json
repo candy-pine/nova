@@ -1,8 +1,8 @@
 {
-    "identifier": "candy-pine.CandyPine",
-    "name": "Candy Pine",
-    "organization": "Candy Pine",
-    "description": "Candý Pine is a soft, harmonious and candy-inspired dark theme, based off of the beautiful Rosé Pine.",
-    "version": "0.0.1",
-    "categories": ["themes"]
+  "identifier": "candy-pine.CandyPine",
+  "name": "Candy Pine",
+  "organization": "Candy Pine",
+  "description": "Candý Pine is a soft, harmonious and candy-inspired dark theme, based off of the beautiful Rosé Pine.",
+  "version": "0.0.1",
+  "categories": ["themes"]
 }

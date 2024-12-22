@@ -19,13 +19,7 @@
 
 A preview of React TSX next to CSS with the default Candý Pine.
 
-![VSCode with Candý Pine](/assets/preview.jpg)
-
-**Candý Pine (Italics)**
-
-A preview of React TSX next to CSS with Candý Pine Italics.
-
-![VSCode with Candý Pine Italics](/assets/preview--italics.jpg)
+![Nova with Candý Pine](/assets/preview.jpg)
 
 ## Thanks to
 

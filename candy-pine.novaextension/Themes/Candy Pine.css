@@ -1,353 +1,428 @@
 meta {
-    -theme-interface-style: dark;
-    -theme-vibrancy: vibrant;
-    -theme-accent-color: auto;
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: true;
 }
 
-
-/*
- * Window styles
- */
 meta.window {
-    border-color: hsla(0, 0%, 100%, 0.1);
+  background-color: #161421;
+  border-color: #1d1a2a;
 }
+
 meta.titlebar {
-    color: hsl(210, 17%, 76%);
-    border-color: hsla(0, 0%, 0%, 0.6);
-}
-meta.titlebar.inactive {
+  color: #f99fb5;
+  border-color: rgba(39, 35, 54, 0.2470588235);
+  background-color: linear-gradient(#272336, #1d1a2a);
 }
 
 meta.button {
-    background: linear-gradient(hsl(210, 5%, 32%), hsl(210, 5%, 25%));
-    border: linear-gradient(hsl(210, 5%, 17%), hsl(210, 5%, 13%));
-    color: white;
+  background: linear-gradient(#1d1a2a, #161421);
+  border: linear-gradient(#353047, #272336);
+  color: #e4e1f0;
 }
+
 meta.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
-    color: white;
+  background: linear-gradient(#272336, #1d1a2a);
+  color: #e4e1f0;
 }
+
 meta.button.selected {
-    color: white;
+  color: #e4e1f0;
+  background: #f2b56b;
+  border: transparent;
 }
+
 meta.button.highlighted.selected {
-    color: white;
+  background: #f2b56b;
 }
+
 meta.button.disabled {
-    
+  background: transparent;
 }
 
 meta.textfield {
-    background-color: hsl(210, 5%, 13%);
-    border-color: hsl(210, 5%, 23%);
-}
-meta.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 23%);
+  background-color: #1d1a2a;
+  border-color: #272336;
 }
 
-/*
- * Document styles
- */
+meta.textfield.highlighted {
+  background-color: #272336;
+  border-color: #353047;
+}
+
+meta.accent {
+  color: #f2b56b;
+}
+
 meta.document {
-    background-color: hsl(210, 5%, 11%);
-    border-color: hsla(0, 0%, 100%, 0.1);
+  background-color: #1d1a2a;
+  border-color: #353047;
 }
 
 meta.document.button {
-    background: linear-gradient(hsl(210, 5%, 25%), hsl(210, 5%, 21%));
-    border: linear-gradient(hsl(210, 5%, 11%), hsl(210, 5%, 8%));
+  background: linear-gradient(#353047, #4b455f);
+  border: linear-gradient(#161421, #1b1828);
 }
+
 meta.document.button.disabled {
-    background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
+  background: linear-gradient(rgba(53, 48, 71, 0.2980392157), rgba(75, 69, 95, 0.2980392157));
 }
+
 meta.document.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+  background: linear-gradient(#716e84, #4b455f);
 }
 
 meta.document.textfield {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
+  background-color: #1b1828;
+  border-color: #272336;
 }
+
 meta.document.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
+  background-color: #1b1828;
+  border-color: #272336;
 }
 
-/* Text */
 meta.text {
-    color: hsl(210, 49%, 90%);
+  color: #e4e1f0;
 }
+
 meta.text.invisible {
-    color: hsla(210, 100%, 90%, 0.15);
+  color: rgba(228, 225, 240, 0.1490196078);
 }
+
 meta.text.selected {
+  color: #f2b56b;
+  background-color: #353047;
 }
 
-/* Cursor */
 meta.cursor {
-    background-color: hsl(210, 5%, 15%);
+  background-color: #272336;
 }
 
-/* Indentation Guides */
 meta.indentguide {
-    border-color: hsla(220, 5%, 48%, 0.2);
+  border-color: rgba(113, 110, 132, 0.2);
 }
 
-/* Gutter */
 meta.gutter {
-    color: hsl(210, 5%, 38%);
+  color: #4b455f;
 }
+
 meta.gutter.selected {
-    background-color: hsl(210, 5%, 10%);
-    color: hsl(210, 17%, 76%);
+  background-color: #1b1828;
+  color: #b28fd5;
 }
 
-
-/*
- * Syntax styles
- */
 comment {
-    color: hsl(210, 20%, 50%);
+  color: #716e84;
 }
+
 processing {
-    color: hsl(210, 20%, 50%);
+  color: #9b97b1;
 }
+
 declaration {
-    color: hsl(210, 20%, 50%);
+  color: #9b97b1;
 }
+
 bracket {
-    color: hsl(210, 50%, 70%);
+  color: #9b97b1;
 }
+
 operator {
-    color: hsl(210, 50%, 70%);
+  color: #88c6c5;
 }
+
 invalid {
-    background-color: hsl(0, 90%, 60%);
-    color: hsl(60, 33%, 96%);
+  background-color: #f962a0;
+  color: #e4e1f0;
 }
+
 link {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
 
-/* Keywords */
 keyword {
-    color: hsl(210, 100%, 70%);
+  color: #4d94a8;
 }
+
 keyword.modifier {
-    font-style: italic;
-    color: hsl(190, 85%, 65%);
+  font-style: italic;
+  color: #4d94a8;
 }
+
 keyword.condition {
-    color: hsl(210, 100%, 70%);
+  color: #4d94a8;
 }
+
 keyword.construct {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
+
 keyword.statement {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
+
 keyword.self {
-    color: hsl(210, 100%, 70%);
+  color: #4d94a8;
 }
+
 keyword.self.prefix {
-    color: hsl(210, 100%, 80%);
+  color: #4d94a8;
 }
 
-/* Values */
 value.boolean {
-    color: hsl(210, 100%, 70%);
-}
-value.null {
-    color: hsl(210, 100%, 70%);
-}
-value.number {
-    color: hsl(45, 50%, 80%);
-}
-value.entity {
-    color: hsl(210, 100%, 70%);
-}
-value.symbol {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
 
-/* Identifiers */
-identifier.type {
-    color: hsl(32, 90%, 70%);
+value.null {
+  color: #f99fb5;
 }
+
+value.number {
+  color: #f99fb5;
+}
+
+value.entity {
+  color: #f99fb5;
+}
+
+value.symbol {
+  color: #f962a0;
+}
+
+identifier.type {
+  color: #e4e1f0;
+}
+
 identifier.constant,
 identifier.global,
 identifier.variable {
-    color: hsl(270, 80%, 80%);
+  color: #f99fb5;
 }
+
 identifier.constant.prefix,
 identifier.global.prefix,
 identifier.variable.prefix {
-    color: hsl(240, 100%, 92%);
+  color: #f2b56b;
 }
+
 identifier.property {
-    color: hsl(270, 80%, 80%);
+  color: #88c6c5;
 }
+
 identifier.property.prefix {
-    color: hsl(240, 100%, 92%);
+  color: #88c6c5;
 }
+
 identifier.decorator,
 identifier.function,
 identifier.method {
-    color: hsl(160, 80%, 55%);
+  color: #f962a0;
 }
+
 identifier.key {
-    color: hsl(270, 80%, 80%);
+  color: #88c6c5;
 }
+
 identifier.argument {
-    color: hsl(270, 80%, 80%);
+  color: #88c6c5;
 }
+
 identifier.argument.prefix {
-    color: hsl(240, 100%, 92%);
+  color: #88c6c5;
 }
 
-/* Strings */
+punctuation.delimiter {
+  color: #88c6c5;
+}
+
 string {
-    color: hsl(5, 80%, 65%);
+  color: #f2b56b;
 }
+
 string.delimiter {
-    color: hsl(5, 80%, 60%);
+  color: #f2b56b;
 }
+
 string.escape {
-    color: hsl(5, 80%, 80%);
+  color: #f2b56b;
 }
+
 string.key {
-    color: hsl(270, 80%, 80%);
+  color: #f2b56b;
 }
+
 string-keyword {
-    color: hsl(30, 100%, 90%);
+  color: #f2b56b;
 }
+
 string-template {
-    color: hsl(30, 100%, 70%);
+  color: #f2b56b;
 }
+
 regex {
-    color: hsl(30, 100%, 70%);
+  color: #4d94a8;
 }
+
 regex.escape {
-    color: hsl(30, 100%, 80%);
+  color: #88c6c5;
 }
+
 cdata {
-    color: hsl(210, 100%, 70%);
+  color: #4d94a8;
 }
 
-/* Markup */
 markup.heading {
-    color: hsl(27, 100%, 70%);
+  color: #f2b56b;
 }
+
 markup.line {
-    color: hsl(60, 43%, 56%);
+  color: #f962a0;
 }
+
 markup.bold {
-    color: hsl(196, 49%, 53%);
-    font-weight: bold;
+  color: #88c6c5;
+  font-weight: bold;
 }
+
 markup.italic {
-    color: hsl(94, 44%, 64%);
-    font-style: italic;
+  color: #f99fb5;
+  font-style: italic;
 }
+
 markup.strikethrough {
-    color: hsl(210, 20%, 50%);
+  color: #9b97b1;
 }
+
 markup.list.item {
-    color: hsl(27, 100%, 70%);
+  color: #f2b56b;
 }
+
 markup.code {
-    background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(113, 110, 132, 0.2784313725);
 }
+
 markup.link {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
 
-/* Types */
-definition.class.name,
-definition.type.name,
-definition.package.name,
-definition.enum.name,
-definition.union.name,
-definition.struct.name {
-    
-}
-
-/* Members */
-definition.property.name {
-}
-definition.function.name,
-definition.method.name {
-    
-}
-
-/* Tags */
 tag {
-    color: hsl(160, 30%, 40%);
-}
-tag.name {
-    color: hsl(160, 60%, 60%);
-}
-tag.framework {
-    color: hsl(280, 30%, 50%);
-}
-tag.framework.name {
-    color: hsl(280, 60%, 70%);
-}
-tag.attribute.name {
-    color: hsl(100, 60%, 70%);
-}
-tag.framework.attribute.name {
-    color: hsl(320, 60%, 70%);
-}
-tag.attribute.value {
-    color: hsl(5, 80%, 65%);
-}
-tag.attribute.value.delimiter {
-    color: hsl(0, 80%, 60%);
-}
-tag.attribute.operator {
-    color: hsl(210, 50%, 70%);
-}
-tag.attribute.value.link {
-    color: hsl(210, 100%, 70%);
+  color: #88c6c5;
 }
 
-/* Styles */
+tag.name {
+  color: #88c6c5;
+}
+
+tag.framework {
+  color: #f99fb5;
+}
+
+tag.framework.name {
+  color: #f99fb5;
+}
+
+tag.attribute.name {
+  color: #f99fb5;
+}
+
+tag.framework.attribute.name {
+  color: #f99fb5;
+}
+
+tag.attribute.name {
+  color: #f99fb5;
+}
+
+tag.attribute.value {
+  color: #f2b56b;
+}
+
+tag.attribute.value.delimiter {
+  color: #4d94a8;
+}
+
+tag.attribute.operator {
+  color: #4d94a8;
+}
+
+tag.attribute.value.link {
+  color: #f99fb5;
+}
+
 style.at {
-    color: hsl(32, 90%, 70%);
-    font-weight: bold;
+  color: #4d94a8;
+  font-weight: bold;
 }
+
 style.selector.element {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 style.selector.identifier.id {
-    color: hsl(32, 90%, 70%);
+  color: #9b97b1;
 }
+
 style.selector.identifier.class {
-    color: hsl(100, 60%, 70%);
+  color: #f99fb5;
 }
+
 style.selector.pseudoclass {
-    color: hsl(270, 80%, 80%);
+  color: #f2b56b;
 }
+
 style.selector.pseudoelement {
-    color: hsl(32, 90%, 70%);
+  color: #9b97b1;
 }
+
 style.attribute.name {
-    color: hsl(190, 85%, 65%);
+  color: #88c6c5;
 }
+
 style.value.number {
-    color: hsl(45, 50%, 80%);
+  color: #f2b56b;
 }
+
 style.value.color.hex {
-    color: hsl(45, 50%, 80%);
+  color: #f2b56b;
 }
+
 style.value.keyword {
-    color: hsl(210, 100%, 70%);
+  color: #f2b56b;
 }
+
 style.value.color.named {
-    color: hsl(210, 100%, 70%);
+  color: #f99fb5;
 }
+
 style.value.identifier.function {
-    color: hsl(160, 80%, 55%);
+  color: #f962a0;
+}
+
+terminal.red {
+  color: #f962a0;
+}
+
+terminal.green {
+  color: #88c6c5;
+}
+
+terminal.yellow {
+  color: #f2b56b;
+}
+
+terminal.blue {
+  color: #88c6c5;
+}
+
+terminal.magenta {
+  color: #b28fd5;
+}
+
+terminal.cyan {
+  color: pine;
+}
+
+terminal.white {
+  color: #e4e1f0;
 }

@@ -1,0 +1,462 @@
+// Base
+$base: #161421;
+$surface: #1d1a2a;
+$overlay: #272336;
+$muted: #716e84;
+$subtle: #9b97b1;
+$text: #e4e1f0;
+$highlight-low: #1b1828;
+$highlight-med: #353047;
+$highlight-high: #4b455f;
+
+// Colors
+$love: #f962a0;
+$gold: #f2b56b;
+$rose: #f99fb5;
+$pine: #4d94a8;
+$foam: #88c6c5;
+$iris: #b28fd5;
+
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: true;
+}
+
+// Window Styles
+meta.window {
+  background-color: $base;
+  border-color: $surface;
+}
+
+meta.titlebar {
+  color: $rose;
+  border-color: #2723363f;
+  background-color: linear-gradient($overlay, $surface);
+}
+
+meta.button {
+  background: linear-gradient($surface, $base);
+  border: linear-gradient($highlight-med, $overlay);
+  color: $text;
+}
+
+meta.button.highlighted {
+  background: linear-gradient($overlay, $surface);
+  color: $text;
+}
+
+meta.button.selected {
+  color: $text;
+  background: $gold;
+  border: transparent;
+}
+
+meta.button.highlighted.selected {
+  background: $gold;
+}
+
+meta.button.disabled {
+  background: transparent;
+}
+
+meta.textfield {
+  background-color: $surface;
+  border-color: $overlay;
+}
+
+meta.textfield.highlighted {
+  background-color: $overlay;
+  border-color: $highlight-med;
+}
+
+meta.accent {
+  color: $gold;
+}
+
+// Document Styles
+meta.document {
+  background-color: $surface;
+  border-color: $highlight-med;
+}
+
+meta.document.button {
+  background: linear-gradient($highlight-med, $highlight-high);
+  border: linear-gradient($base, $highlight-low);
+}
+
+meta.document.button.disabled {
+  background: linear-gradient(#3530474c, #4b455f4c);
+}
+
+meta.document.button.highlighted {
+  background: linear-gradient($muted, $highlight-high);
+}
+
+meta.document.textfield {
+  background-color: $highlight-low;
+  border-color: $overlay;
+}
+
+meta.document.textfield.highlighted {
+  background-color: $highlight-low;
+  border-color: $overlay;
+}
+
+// Text Styles
+meta.text {
+  color: $text;
+}
+
+meta.text.invisible {
+  color: #e4e1f026;
+}
+
+meta.text.selected {
+  color: $gold;
+  background-color: $highlight-med;
+}
+
+// Cursor Styles
+meta.cursor {
+  background-color: $overlay;
+}
+
+// Indentation Guides
+meta.indentguide {
+  border-color: #716e8433;
+}
+
+// Gutter
+meta.gutter {
+  color: #4b455fff;
+}
+
+meta.gutter.selected {
+  background-color: $highlight-low;
+  color: $iris;
+}
+
+// Syntax Styles
+comment {
+  color: $muted;
+}
+
+processing {
+  color: $subtle;
+}
+
+declaration {
+  color: $subtle;
+}
+
+bracket {
+  color: $subtle;
+}
+
+operator {
+  color: $foam;
+}
+
+invalid {
+  background-color: $love;
+  color: $text;
+}
+
+link {
+  color: $rose;
+}
+
+// Keywords
+keyword {
+  color: $pine;
+}
+
+keyword.modifier {
+  font-style: italic;
+  color: $pine;
+}
+
+keyword.condition {
+  color: $pine;
+}
+
+keyword.construct {
+  color: $rose;
+}
+
+keyword.statement {
+  color: $rose;
+}
+
+keyword.self {
+  color: $pine;
+}
+
+keyword.self.prefix {
+  color: $pine;
+}
+
+// Values
+value.boolean {
+  color: $rose;
+}
+
+value.null {
+  color: $rose;
+}
+
+value.number {
+  color: $rose;
+}
+
+value.entity {
+  color: $rose;
+}
+
+value.symbol {
+  color: $love;
+}
+
+// Identifiers
+identifier.type {
+  color: $text;
+}
+
+identifier.constant,
+identifier.global,
+identifier.variable {
+  color: $rose;
+}
+
+identifier.constant.prefix,
+identifier.global.prefix,
+identifier.variable.prefix {
+  color: $gold;
+}
+
+identifier.property {
+  color: $foam;
+}
+
+identifier.property.prefix {
+  color: $foam;
+}
+
+identifier.decorator,
+identifier.function,
+identifier.method {
+  color: $love;
+}
+
+identifier.key {
+  color: $foam;
+}
+
+identifier.argument {
+  color: $foam;
+}
+
+identifier.argument.prefix {
+  color: $foam;
+}
+
+punctuation.delimiter {
+  color: $foam;
+}
+
+// Strings
+string {
+  color: $gold;
+}
+
+string.delimiter {
+  color: $gold;
+}
+
+string.escape {
+  color: $gold;
+}
+
+string.key {
+  color: $gold;
+}
+
+string-keyword {
+  color: $gold;
+}
+
+string-template {
+  color: $gold;
+}
+
+regex {
+  color: $pine;
+}
+
+regex.escape {
+  color: $foam;
+}
+
+cdata {
+  color: $pine;
+}
+
+// Markup
+markup.heading {
+  color: $gold;
+}
+
+markup.line {
+  color: $love;
+}
+
+markup.bold {
+  color: $foam;
+  font-weight: bold;
+}
+
+markup.italic {
+  color: $rose;
+  font-style: italic;
+}
+
+markup.strikethrough {
+  color: $subtle;
+}
+
+markup.list.item {
+  color: $gold;
+}
+
+markup.code {
+  background-color: #716e8447;
+}
+
+markup.link {
+  color: $rose;
+}
+
+// Tags
+tag {
+  color: $foam;
+}
+
+tag.name {
+  color: $foam;
+}
+
+tag.framework {
+  color: $rose;
+}
+
+tag.framework.name {
+  color: $rose;
+}
+
+tag.attribute.name {
+  color: $rose;
+}
+
+tag.framework.attribute.name {
+  color: $rose;
+}
+
+tag.attribute.name {
+  color: $rose;
+}
+
+tag.attribute.value {
+  color: $gold;
+}
+
+tag.attribute.value.delimiter {
+  color: $pine;
+}
+
+tag.attribute.operator {
+  color: $pine;
+}
+
+tag.attribute.value.link {
+  color: $rose;
+}
+
+// Styles
+style.at {
+  color: $pine;
+  font-weight: bold;
+}
+
+style.selector.element {
+  font-weight: bold;
+}
+
+style.selector.identifier.id {
+  color: $subtle;
+}
+
+style.selector.identifier.class {
+  color: $rose;
+}
+
+style.selector.pseudoclass {
+  color: $gold;
+}
+
+style.selector.pseudoelement {
+  color: $subtle;
+}
+
+style.attribute.name {
+  color: $foam;
+}
+
+style.value.number {
+  color: $gold;
+}
+
+style.value.color.hex {
+  color: $gold;
+}
+
+style.value.keyword {
+  color: $gold;
+}
+
+style.value.color.named {
+  color: $rose;
+}
+
+style.value.identifier.function {
+  color: $love;
+}
+
+// Terminal Styles
+terminal.red {
+  color: $love;
+}
+
+terminal.green {
+  color: $foam;
+}
+
+terminal.yellow {
+  color: $gold;
+}
+
+terminal.blue {
+  color: $foam;
+}
+
+terminal.magenta {
+  color: $iris;
+}
+
+terminal.cyan {
+  color: pine;
+}
+
+terminal.white {
+  color: $text;
+}

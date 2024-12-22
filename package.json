@@ -1,11 +1,13 @@
 {
   "name": "@candy-pine/nova",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Candý Pine is a soft, harmonious and candy-inspired dark theme, based off of the beautiful Rosé Pine.",
   "scripts": {
+    "build": "rollup --c",
     "dev": "rollup --c --watch",
-    "build": "rollup --c"r
+    "format": "prettier --write ."
   },
+  "type": "module",
   "keywords": [
     "minimal",
     "aesthetic",
@@ -17,8 +19,11 @@
   ],
   "author": "Daniel Yuschick",
   "license": "MIT",
-  "dependencies": {},R
   "devDependencies": {
-    "prettier": "^3.4.2"
-  }.
+    "prettier": "^3.4.2",
+    "react": "^19.0.0",
+    "rollup": "^4.29.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.83.0"
+  }
 }

@@ -1,33 +1,26 @@
-<!--
-👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
+<p align="center">
+	<img src="../assets/candy-pine--icon--rounded.webp" width="150" />
+	<h2 align="center">Candý Pine for VSCode</h2>
+</p>
 
-Not every extension will need every item described below. Use your best judgement when deciding which parts to keep to provide the best experience for your new users.
+<p align="center">Welcome to Candý Pine, a soft, harmonious and candy-inspired dark theme, based off of the beautiful <a href="https://github.com/rose-pine/rose-pine-theme">Rosé Pine</a>.</p>
 
-💡 Quick Tip! As you edit this README template, you can preview your changes by selecting **Extensions → Activate Project as Extension**, opening the Extension Library, and selecting "Candy Pine" in the sidebar.
+## Usage
 
-Let's get started!
--->
+1. Open Nova
+2. Under extensions, import `Candy Pine`
+3. Select `Candy Pine` from the themes section in Settings
 
-<!--
-🎈 To give users an idea of what your theme looks like, it's a great idea to show big, beautiful screenshots of your theme in action:
--->
+## Gallery
 
-**Candy Pine** provides a fun, bright palette:
+> Font used is [TT Commons Pro](https://typetype.org/fonts/tt-commons-pro/)
 
-![](https://nova.app/images/en/dark/editor.png)
+**Candý Pine**
 
-<!--
-🎈 If your extension provides multiple variations, don't forget to show those too!
--->
+A preview of React TSX next to CSS with the default Candý Pine.
 
-Candy Pine also offers a lighter alternative:
+![Nova with Candý Pine](../assets/preview.jpg)
 
-![](https://nova.app/images/en/light/editor.png)
+## Thanks to
 
-## Acknowledgements
-
-<!--
-🎈 If your theme is based on existing work by someone else, consider crediting the original author
--->
-
-Candy Pine is based on _Original Candy Pine_ by [Lauren Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum).
+- [Rosé Pine](https://github.com/rose-pine/rose-pine-theme)
